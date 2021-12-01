@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  <title>Contato</title>
+</head>
+<body>
+  <div class="form-container">
+    <div class="container">
+      <h1 class="mb-3">Contato</h1>
+      <form target="_blank" action="https://easyform.herokuapp.com/contact/incognator@gmail.com" method="POST">
+        <div class="form-group">
+          <div class="form-row">
+            <div class="col mb-2">
+              <input type="text" name="name" class="form-control" placeholder="Nome" required>
+            </div>
+            <div class="col mb-2">
+              <input type="email" name="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="col mb-2">
+              <input type="text" name="subject" class="form-control" placeholder="Assunto" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Digite sua mensagem..." class="form-control" name="message" rows="10" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-lg btn-dark btn-block">Enviar Email</button>
+        <input type="hidden" name="_template" value="table">
+      </form>
+    </div>
+  </div>  
+</body>
+</html>
